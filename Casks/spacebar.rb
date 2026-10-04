@@ -1,6 +1,6 @@
 cask "spacebar" do
-  version "0.2.0"
-  sha256 "0da1af10e61aa23ba3a04b59ba6efa89b24c551cb1fe63ba04c8a17a9417e2ac"
+  version "0.3.0"
+  sha256 "2fe3c5d4efcfa70c8b1cad3d99fd2a8546d45bbb2cd17398d49de463bd064ac4"
 
   url "https://github.com/ovedaydin/spacebar/releases/download/v#{version}/Spacebar-#{version}.zip"
   name "Spacebar"
@@ -16,6 +16,8 @@ cask "spacebar" do
   depends_on macos: :ventura
 
   app "Spacebar.app"
+  # The app's own binary doubles as the command-line tool: `spacebar help`.
+  binary "#{appdir}/Spacebar.app/Contents/MacOS/Spacebar", target: "spacebar"
 
   # The app is self-signed, not notarized, so strip quarantine after install.
   # Remove this block if you switch to Developer ID + notarization.
