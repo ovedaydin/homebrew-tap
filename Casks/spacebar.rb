@@ -1,6 +1,6 @@
 cask "spacebar" do
-  version "0.3.0"
-  sha256 "2fe3c5d4efcfa70c8b1cad3d99fd2a8546d45bbb2cd17398d49de463bd064ac4"
+  version "0.4.0"
+  sha256 "120c69e1e73596c3113f5cb21744b02b269bd025ff5888852a1ee8121ce929e3"
 
   url "https://github.com/ovedaydin/spacebar/releases/download/v#{version}/Spacebar-#{version}.zip"
   name "Spacebar"
