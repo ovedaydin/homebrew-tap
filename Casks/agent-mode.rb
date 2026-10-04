@@ -1,6 +1,6 @@
 cask "agent-mode" do
-  version "1.2"
-  sha256 "f5ed413090881b4178781300a198966bfc0ea66de7864411b24d89546b6e7f57"
+  version "1.3"
+  sha256 "13c4ed1a05f7835ee07c77dae34b04be90a5c201a70f1f3d5eab99be55a9941e"
 
   url "https://github.com/ovedaydin/agent-mode/releases/download/v#{version}/Agent-Mode.zip"
   name "Agent Mode"
